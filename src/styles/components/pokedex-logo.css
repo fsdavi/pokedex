@@ -1,0 +1,25 @@
+.container-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  padding-top: 50px;
+}
+
+.pokedex-logo {
+  z-index: 100;
+}
+
+.pokeball {
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+
+  animation: spinning 2s linear infinite;
+}
+
+@keyframes spinning {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
