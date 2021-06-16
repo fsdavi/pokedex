@@ -1,0 +1,106 @@
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  height: 200px;
+  width: 530px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 75px;
+
+  height: 100vh;
+  overflow-x: hidden;
+  box-shadow: inset 0px -230px 16px -6px #000;
+}
+
+.container-trainer-selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25rem;
+}
+
+.container-trainer-selection .container-trainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 16px;
+
+  width: 300px;
+  height: 400px;
+}
+
+.bg-button-blue {
+  background: #7bd6f7;
+  border: 4px solid #5eaac4;
+}
+
+.bg-button-red {
+  background: #f27676;
+  border: 4px solid #d36565;
+}
+
+.img-trainer {
+  height: 200px;
+  cursor: auto;
+}
+
+.selected-trainer {
+  animation: flash linear 0.75s infinite;
+}
+
+.text-container {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  justify-self: end;
+  position: relative;
+
+  border: 5px solid #ccc;
+  border-radius: 6px;
+
+  width: 95%;
+  height: 150px;
+  padding: 0px 10px 0px 10px;
+
+  margin-bottom: 15px;
+
+  background-color: #FFF;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #545454;
+
+  animation: blinker 0.9s infinite;
+}
+
+@keyframes blinker {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: .1; }
+  100% { opacity: 1; }
+}
