@@ -8,8 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
+  --bg-color: rgba(255, 255, 255, 0.75);
   padding: 0;
   margin: 0;
+  background-image: linear-gradient(0deg, var(--bg-color), var(--bg-color)),
+    url('./assets/bg.jpg');
 }
 
 #app {
