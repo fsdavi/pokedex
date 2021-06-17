@@ -9,5 +9,5 @@
 export default {};
 </script>
 
-<style scoped src="../styles/components/PokeLogo.css">
+<style scoped src="../styles/components/BaseLogo.css">
 </style>
