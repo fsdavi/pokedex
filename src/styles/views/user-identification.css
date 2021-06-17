@@ -1,0 +1,11 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 75px;
+  
+    height: 100vh;
+    overflow-x: hidden;
+    box-shadow: inset 0px -180px 16px -6px #000;
+  }
