@@ -1,0 +1,81 @@
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  height: 200px;
+  width: 530px;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  height: 100vh;
+  overflow-x: hidden;
+  box-shadow: inset 0px -180px 16px -6px #000;
+}
+
+.container-trainer-selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-trainer-selection .container-trainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 2px;
+
+  width: 50vw;
+  height: 15rem;
+  transform: skew(20deg);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+.container-trainer-selection .container-trainer img {
+  height: 22rem;
+  transform: skew(-20deg);
+  margin-top: -20px;
+  position: absolute;
+}
+
+.imgBrendan-trainer {
+  right: 15%;
+}
+
+.imgMay-trainer {
+  left: 15%;
+}
+
+.bg-button-blue {
+  background: #7bd6f7;
+  border: 4px solid #5eaac4;
+}
+
+.bg-button-red {
+  background: #f27676;
+  border: 4px solid #d36565;
+}
+
+.selected-trainer {
+  animation: flash linear 0.75s infinite;
+}
+
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: .1; }
+  100% { opacity: 1; }
+}
+
+@media only screen and (min-width: 600px) {
+  .container-trainer-selection {
+    gap: 10rem;
+  }
+}
