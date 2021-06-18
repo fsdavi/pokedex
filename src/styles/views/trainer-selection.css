@@ -16,7 +16,7 @@ button {
 
   height: 100vh;
   overflow-x: hidden;
-  box-shadow: inset 0px -180px 16px -6px #000;
+  box-shadow: inset 0px -160px 16px -6px #000;
 }
 
 .container-trainer-selection {
