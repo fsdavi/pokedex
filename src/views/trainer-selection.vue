@@ -4,21 +4,25 @@
     <div class="container-trainer-selection">
       <button
         class="container-trainer bg-button-blue"
-        @click="handleClickTrainer('brendan')"
-        :class="trainer === 'brendan' ? 'selected-trainer' : ''"
+        @click="handleClickTrainer('Brendan')"
+        :class="trainer === 'Brendan' ? 'selected-trainer' : ''"
       >
         <img
-          src="../assets/brendan.svg"
+          src="../assets/full-brendan.svg"
           alt="Trainer"
           class="imgBrendan-trainer"
         />
       </button>
       <button
         class="container-trainer bg-button-red"
-        @click="handleClickTrainer('may')"
-        :class="trainer === 'may' ? 'selected-trainer' : ''"
+        @click="handleClickTrainer('May')"
+        :class="trainer === 'May' ? 'selected-trainer' : ''"
       >
-        <img src="../assets/may.svg" alt="Trainer" class="imgMay-trainer" />
+        <img
+          src="../assets/full-may.svg"
+          alt="Trainer"
+          class="imgMay-trainer"
+        />
       </button>
     </div>
     <box-dialog :messageText="'Choose your trainer!'" />
