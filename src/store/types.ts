@@ -1,8 +1,9 @@
 export interface User {
-    trainer: string;
-    name: string;
+  name: string;
+  trainer: string;
+  starter: string;
 }
 
 export interface StateStore {
-    user: User;
+  user: User;
 }
