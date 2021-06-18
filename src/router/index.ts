@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import TrainerSelection from '../views/trainer-selection.vue';
 import UserIdentification from '../views/user-identification.vue';
+import Dashboard from '../views/dashboard.vue';
 
 Vue.use(VueRouter);
 
@@ -14,6 +15,10 @@ const routes: Array<RouteConfig> = [
     path: '/identification',
     name: 'Identification',
     component: UserIdentification,
+  }, {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
   },
 ];
 
