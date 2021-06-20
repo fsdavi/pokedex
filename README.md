@@ -39,7 +39,7 @@
 - [ ] Unit Tests
 - [ ] Pokemon modal with details about
 - [ ] Favorite Pokemons drawer
-- [ ] Run this application in Docker
+- [X] Run this application in Docker
 - [X] Deploy - [Vercel](https://pokedex-gilt-six.vercel.app/)
 
 
