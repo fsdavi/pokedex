@@ -36,7 +36,7 @@
 
 ## 💇🏻‍♂️ To-do list!
 - [ ] Persist states with Vuex
-- [ ] Unit Tests
+- [X] Unit Tests for the store
 - [ ] Pokemon modal with details about
 - [ ] Favorite Pokemons drawer
 - [X] Run this application in Docker
