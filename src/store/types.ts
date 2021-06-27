@@ -1,9 +1,5 @@
-export interface User {
+export interface StoreState {
   name: string;
   trainer: string;
   starter: string;
-}
-
-export interface StateStore {
-  user: User;
 }

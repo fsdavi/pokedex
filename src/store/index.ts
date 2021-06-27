@@ -1,33 +1,20 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { StateStore } from './types';
+import { StoreState } from './types';
+
+import mutations from './mutations';
+import getters from './getters';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store<StateStore>({
+export default new Vuex.Store<StoreState>({
   state: {
-    user: {
-      trainer: 'brendan',
-      name: '',
-      starter: '',
-    },
+    trainer: '',
+    name: '',
+    starter: '',
   },
-  mutations: {
-    changeTrainer: (state, trainer) => {
-      state.user.trainer = trainer;
-    },
-    changeUserName: (state, userName) => {
-      state.user.name = userName;
-    },
-    changeStarter: (state, starter) => {
-      state.user.starter = starter;
-    },
-  },
-  getters: {
-    trainer: (state) => state.user.trainer,
-    userName: (state) => state.user.name,
-    starter: (state) => state.user.starter,
-  },
+  mutations,
+  getters,
   actions: {
     selectTrainer({ commit }, trainer) {
       commit('changeTrainer', trainer);
