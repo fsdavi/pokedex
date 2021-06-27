@@ -5,8 +5,8 @@ const { changeStarter, changeTrainer, changeUserName } = mutations;
 const state = {
   name: '',
   trainer: '',
-  starter: ''
-}
+  starter: '',
+};
 
 describe('MUTATIONS', () => {
   it('should change the Starter', () => {
@@ -21,9 +21,9 @@ describe('MUTATIONS', () => {
     expect(state.name).toBe('Davi');
   });
 
-  it('should change starter', () => {
-    changeUserName(state, 'bulbasaur');
+  it('should change trainer', () => {
+    changeTrainer(state, 'Brendan');
 
-    expect(state.name).toBe('bulbasaur');
+    expect(state.name).toBe('Brendan');
   });
 });
