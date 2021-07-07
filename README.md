@@ -35,7 +35,7 @@
 </br>
 
 ## 💇🏻‍♂️ To-do list!
-- [ ] Persist states with Vuex
+- [X] Persist states with Vuex
 - [X] Unit Tests for the store
 - [ ] Pokemon modal with details about
 - [ ] Favorite Pokemons drawer
