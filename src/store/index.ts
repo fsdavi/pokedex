@@ -1,18 +1,26 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { StoreState } from './types';
+import VuexPersistence from 'vuex-persist';
 
+import { StoreState } from './types';
 import mutations from './mutations';
 import getters from './getters';
 
 Vue.use(Vuex);
+
+const vuexLocal = new VuexPersistence({
+  storage: window.localStorage,
+  key: 'pokedex',
+});
 
 export default new Vuex.Store<StoreState>({
   state: {
     trainer: '',
     name: '',
     starter: '',
+    favorites: [],
   },
+  plugins: [vuexLocal.plugin],
   mutations,
   getters,
   actions: {
