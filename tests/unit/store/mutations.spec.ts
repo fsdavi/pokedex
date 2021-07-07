@@ -6,6 +6,7 @@ const state = {
   name: '',
   trainer: '',
   starter: '',
+  favorites: [],
 };
 
 describe('MUTATIONS', () => {

@@ -6,6 +6,7 @@ const state = {
   trainer: 'Brendan',
   name: 'Davi',
   starter: 'Charmander',
+  favorites: []
 };
 
 describe('GETTERS', () => {
