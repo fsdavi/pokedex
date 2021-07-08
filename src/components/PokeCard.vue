@@ -1,20 +1,26 @@
 <template>
-    <div class="pokemon-container">
-      <p v-if="!loading">{{ pokemonNameFormated }}</p>
-      <img
-        :src="pokemon.sprites.front_default"
-        :alt="pokemonNameFormated"
-        v-if="!loading"
-      >
-      <img src="../assets/pokeball.svg" alt="Loading..." class="loading" v-else>
-    </div>
+  <div class="pokemon-container">
+    <p v-if="!loading">{{ pokemonNameFormated }}</p>
+    <img
+      :src="pokemon.sprites.front_default"
+      :alt="pokemonNameFormated"
+      v-if="!loading"
+    />
+    <img src="../assets/pokeball.svg" alt="Loading..." class="loading" v-else />
+
+    <poke-tags :dataTypes="pokemon.types"/>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import PokeTags from './PokeTags.vue';
 
 @Component({
+  components: {
+    'poke-tags': PokeTags,
+  },
   props: {
     pokemonURL: {
       type: String,
@@ -28,7 +34,6 @@ import Component from 'vue-class-component';
     };
   },
 })
-
 export default class PokeCard extends Vue {
   async created(): Promise<void> {
     if (this.$props.pokemonURL) {
